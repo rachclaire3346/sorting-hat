@@ -7,6 +7,16 @@ new Vue({
 
       randomHouse: '',
 
+      questionOne: '',
+
+      questionTwo: '',
+
+      questionThree: '',
+
+      questionFour: '',
+
+      questionFive: '',
+
       houses: [
 				{
 				name:'Gryffindor!'
@@ -20,117 +30,7 @@ new Vue({
 				{
 				name:'Slytherin!'	
 				}
-			  ],
-
-		Questions: [
-
-	    { 
-	      text: 'What is your favorite color?',
-	      answers: [
-	        {
-	          text: 'Scarlet',
-	          house: 'Gryffindor'
-	        },
-	        {
-	          text: 'Yellow',
-	          house: 'Hufflepuff'
-	        },
-	        {
-	          text: 'Blue',
-	          house: 'Ravenclaw'
-	        },
-	        {
-	          text: 'Green',
-	          house: 'Slytherin'
-	        }
-	      ]
-	    },
-	    { 
-	      text: 'What is your favorite animal?',
-	      answers: [
-	        {
-	          text: 'Lion',
-	          house: 'Gryffindor'
-	        },
-	        {
-	          text: 'Badger',
-	          house: 'Hufflepuff'
-	        },
-	        {
-	          text: 'Eagle',
-	          house: 'Ravenclaw'
-	        },
-	        {
-	          text: 'Snake',
-	          house: 'Slytherin'
-	        }
-	      ]
-	    },
-	    { 
-	      text: 'What kind of person do you try to be?',
-	      answers: [
-	        {
-	          text: 'Brave',
-	          house: 'Gryffindor'
-	        },
-	        {
-	          text: 'Loyal',
-	          house: 'Hufflepuff'
-	        },
-	        {
-	          text: 'Witty',
-	          house: 'Ravenclaw'
-	        },
-	        {
-	          text: 'Cunning',
-	          house: 'Slytherin'
-	        }
-	      ]
-	    },
-	    { 
-	      text: 'Who is your favorite witch or wizard?',
-	      answers: [
-	        {
-	          text: 'Albus Dumbledore',
-	          house: 'Gryffindor'
-	        },
-	        {
-	          text: 'Newt Scamander',
-	          house: 'Hufflepuff'
-	        },
-	        {
-	          text: 'Garrick Ollivander',
-	          house: 'Ravenclaw'
-	        },
-	        {
-	          text: 'Tom Riddle',
-	          house: 'Slytherin'
-	        }
-	      ]
-	    },
-	    { 
-	      text: 'What is your favorite Berty Bott\'s flavor?',
-	      answers: [
-	        {
-	          text: 'Grape',
-	          house: 'Gryffindor'
-	        },
-	        {
-	          text: 'Horseradish',
-	          house: 'Hufflepuff'
-	        },
-	        {
-	          text: 'Roast Beef',
-	          house: 'Ravenclaw'
-	        },
-	        {
-	          text: 'Spinach',
-	          house: 'Slytherin'
-	        }
-	      ]
-	    }
-
-	  ]		  
+			  ]		  
    },
 
    methods: {
@@ -138,8 +38,86 @@ new Vue({
    		randomizeHouse: function () {
    			var randomNumber = Math.floor(Math.random() * (this.houses.length));
    			this.randomHouse = this.houses[randomNumber].name;
-   			alert('You are in ' + randomHouse.name + '!');
+   		},
 
+   		answerQuestionOne: function () {
+   			console.log(questionOne);
+   			if (this.randomHouse.name === 'Gryffindor') {
+   				this.questionOne = 'Scarlet';
+   			}
+   			if (this.randomHouse.name === 'Hufflepuff') {
+   				this.questionOne = 'Yellow'
+   			}
+   			if (this.randomHouse.name === 'Ravelclaw') {
+   				this.questionOne = 'Blue'
+   			}
+   			if (this.randomHouse.name === 'Slytherin') {
+   				this.questionOne = 'Green'
+   			}
+
+   		},
+
+   		answerQuestionTwo: function () {
+   			if (this.randomHouse.name === 'Gryffindor') {
+   				this.questionOne = 'Lion';
+   			}
+   			if (this.randomHouse.name === 'Hufflepuff') {
+   				this.questionOne = 'Badger'
+   			}
+   			if (this.randomHouse.name === 'Ravelclaw') {
+   				this.questionOne = 'Eagle'
+   			}
+   			if (this.randomHouse.name === 'Slytherin') {
+   				this.questionOne = 'Snake'
+   			}
+
+   		},
+
+   		answerQuestionThree: function () {
+   			if (this.randomHouse.name === 'Gryffindor') {
+   				this.questionOne = 'Brave';
+   			}
+   			if (this.randomHouse.name === 'Hufflepuff') {
+   				this.questionOne = 'Loyal'
+   			}
+   			if (this.randomHouse.name === 'Ravelclaw') {
+   				this.questionOne = 'Witty'
+   			}
+   			if (this.randomHouse.name === 'Slytherin') {
+   				this.questionOne = 'Cunning'
+   			}
+
+   		},
+
+   		answerQuestionFour: function () {
+   			if (this.randomHouse.name === 'Gryffindor') {
+   				this.questionOne = 'Albus Dumbledore';
+   			}
+   			if (this.randomHouse.name === 'Hufflepuff') {
+   				this.questionOne = 'Newt Scamander'
+   			}
+   			if (this.randomHouse.name === 'Ravelclaw') {
+   				this.questionOne = 'Garrick Ollivander'
+   			}
+   			if (this.randomHouse.name === 'Slytherin') {
+   				this.questionOne = 'Tom Riddle'
+   			}
+
+   		},
+
+   		answerQuestionFour: function () {
+   			if (this.randomHouse.name === 'Gryffindor') {
+   				this.questionOne = 'Grape';
+   			}
+   			if (this.randomHouse.name === 'Hufflepuff') {
+   				this.questionOne = 'Horseradish'
+   			}
+   			if (this.randomHouse.name === 'Ravelclaw') {
+   				this.questionOne = 'Roast Beef'
+   			}
+   			if (this.randomHouse.name === 'Slytherin') {
+   				this.questionOne = 'Spinnach'
+   			}
 
    		}
 

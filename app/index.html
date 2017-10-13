@@ -13,12 +13,53 @@
 	
 	<h2>{{ message }}</h2>
 
-	<button class="button" v-on:click="randomizeHouse">Let's sort</button></button>
+	<button class="button" v-on:click="randomizeHouse">Let's sort</button>
 
 		<div class="text">
 			<p>You are in ... {{ randomHouse }}</p>
 		</div>
 
+		<div class="questions">
+			<div class="questionOne">
+
+				<button class="button" v-on:click="answerQuestionOne">Favorite Colors</button>
+
+				<h3>What is your favorite color?</h3>
+				<p>{{ questionOne }}</p>
+			</div>
+
+			<div class="questionTwo">
+
+				<button class="button" v-on:click="answerQuestionTwo">Favorite Animal</button>
+
+				<h3>What is your favorite animal?</h3>
+				<p>{{ questionTwo }}</p>
+			</div>
+
+			<div class="questionThree">
+
+				<button class="button" v-on:click="answerQuestionThree">Personality</button>
+
+				<h3>What kind of person do you try to be?</h3>
+				<p>{{ questionThree }}</p>
+			</div>	
+
+			<div class="questionFour">
+
+				<button class="button" v-on:click="answerQuestionFour">Favorite Witch/Wizard</button>
+
+				<h3>Who is your favorite witch or wizard?</h3>
+				<p>{{ questionFour }}</p>
+			</div>	
+
+			<div class="questionFive">
+
+				<button class="button" v-on:click="answerQuestionFive">Flavor</button>
+
+				<h3>What is your favorite Berty Bott's flavor?</h3>
+				<p>{{ questionFive }}</p>
+			</div>	
+		</div>	
 	</div>
 
 
