@@ -1,0 +1,26 @@
+{
+  "name": "sorting-hat",
+  "version": "1.0.0",
+  "description": "A website that sorts you into your house",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "start": "node app/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rachclaire3346/sorting-hat.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rachclaire3346/sorting-hat/issues"
+  },
+  "homepage": "hhttps://github.com/rachclaire3346/sorting-hat#readme",
+  "dependencies": {
+    "express": "^4.16.0"
+  }
+}
